@@ -23,7 +23,7 @@ const originalTarget = new THREE.Vector3(0, 0, 0);
 camera.position.copy(originalPosition);
 camera.lookAt(originalTarget);
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
